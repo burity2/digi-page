@@ -1,0 +1,25 @@
+import vaneImg from '../../assets/hero-crop.png'
+import bgMandala from '../../assets/crop-bg-mandala.png'
+import './hero.css'
+import { IconArrowNarrowRight } from '@tabler/icons-react';
+
+export default function Hero() {
+  return (
+    <>
+    <div id="hero-container">
+      <div id="hero-txt">
+        <h1>Care that helps you feel seen, understood, and <span id='txt-accent'>supported.</span></h1>
+        <p>Compassionate psychiatric care for adults facing anxiety, burnout, mood challenges and life transitions.</p>
+        <div id='hero-cta-wrapper'>
+          <button>Agendar Consulta</button>
+          <a id='underlined-a' href="#about">Saiba mais <span><IconArrowNarrowRight stroke={1.5} /></span></a>
+        </div>
+      </div>
+      <div id="hero-art">
+        <img id="hero-mandala" src={bgMandala} alt="" />
+        <img id="hero-vane" src={vaneImg} alt="" />
+      </div>
+    </div>
+    </>
+  )
+}

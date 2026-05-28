@@ -1,0 +1,23 @@
+import './App.css'
+import Header from './sections/header/Header'
+import Hero from './sections/hero/Hero'
+import About from './sections/about/About'
+import Icon from './sections/icons/Icons'
+import Resources from './sections/resources/Resources'
+import Footer from './sections/footer/Footer'
+
+function App() {
+
+  return (
+    < div className='container'>
+    <Header/>
+    <Hero/>
+    <section id="about"><About /></section>
+    <section id="icons"><Icon/></section>
+    <section id="resources"><Resources/></section>
+    <section id="footer"><Footer/></section>
+    </div>
+  )
+}
+
+export default App

@@ -1,0 +1,95 @@
+.resources-box {
+  display: flex;
+  padding: var(--space-5) var(--space-6);
+  background-image: url('../../assets/olive-grain-bg.png');
+  color: var(--surface);
+}
+
+.resources-txt {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.resources-txt h2 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.resources-txt h4 {
+  color: var(--surface);
+}
+
+.resources-txt button {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  font-weight: 400;
+  text-decoration: underline solid 1px;
+  background: none;
+  text-underline-offset: 0.4em;
+  gap: var(--space-2);
+  padding: 0;
+}
+
+.resources-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+}
+
+.res-card{
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.res-img {
+  width: 100%;
+  max-width: 270px;
+  /* height: auto;
+  max-height: 150px; */
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.res-txt {
+  background-color: var(--surface);
+  color: var(--ink);
+  width: 100%;
+  max-width: 270px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-2);
+}
+
+.res-txt h4 {
+  color: var(--muted-text);
+  font-size: 0.9rem;
+}
+
+.res-txt h2 {
+  font-family: var(--font-heading);
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.res-txt p {
+  color: var(--muted-text);
+  font-size: 0.9rem;
+}
+
+.res-icon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--terracotta);
+}
+
+
+.res-cta-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

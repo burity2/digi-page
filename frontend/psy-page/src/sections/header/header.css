@@ -1,0 +1,68 @@
+#header-box {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-1) var(--space-6) ;
+  background-color: var(--bg);
+  box-shadow: 0 1px 25px var(--olive);
+  z-index: 1;
+}
+
+.title {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.title-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title h1 {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+}
+
+.title p {
+  font-size: 1rem;
+}
+
+.cta {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 60dvw;
+  gap: var(--space-10);
+}
+
+.page-nav{
+  display: flex;
+  gap: var(--space-5);
+  /* font-size: 0.9rem; */
+}
+
+.title img {
+  max-width: 6rem;
+  max-height: 6rem;
+  filter: var(--terracotta-filter);
+}
+
+a {
+  text-decoration: none;
+  color: var(--ink);
+}
+
+button {
+  padding: var(--space-1) var(--space-5);
+  height: var(--space-7);
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--terracotta);
+  color: var(--ink-on-color);
+  font-weight: bold;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: var(--clay);
+}

@@ -1,0 +1,37 @@
+#icon-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-5);
+  background-color: var(--bg);
+  padding: var(--space-3) var(--space-6) var(--space-5);
+}
+
+#approach-card-box {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.approach-card + .approach-card {
+  border-left: 1px solid var(--olive);
+}
+
+.approach-card {
+  display: flex;
+  flex: 1;
+  padding: 0 var(--space-4);
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--ink);
+  width: 18%;
+  gap: var(--space-2);
+}
+
+.card-icon {
+  height: 4rem;
+  width: 4rem;
+  color: var(--olive);
+}
+
