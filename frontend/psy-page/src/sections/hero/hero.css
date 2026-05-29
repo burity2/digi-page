@@ -3,8 +3,13 @@
   align-items: center;
   justify-content: center;
   gap: 12rem;
-  background-color: var(--bg);
+  /* background-color: var(--bg); */
+  background-image: var(--bg-img);
   padding: var(--space-2) var(--space-6) 0;
+
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;     /* fills container, may crop */
 }
 
 #hero-txt {

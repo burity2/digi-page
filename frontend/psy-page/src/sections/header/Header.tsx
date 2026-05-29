@@ -15,7 +15,7 @@ export default function Header({ isDark, toggleTheme }: HeaderProps) {
       <div className="title">
         <img src={titleArt} alt="a mandala resembling the sun" />
         <div className="title-txt">
-          <h1>VANESSA DI GIORNU</h1>
+          <h1>VANESSA DI GIORNO</h1>
           <p>PSICÓLOGA</p>
         </div>
       </div>

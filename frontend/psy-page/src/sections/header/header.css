@@ -2,9 +2,10 @@
   display: flex;
   justify-content: space-between;
   padding: var(--space-1) var(--space-6) ;
-  background-color: var(--bg);
-  box-shadow: 0 1px 25px var(--olive);
+  background-color: var(--surface);
+  box-shadow: 0 1px 5px var(--olive);
   z-index: 1;
+  color: var(--ink);
 }
 
 .title {
@@ -37,8 +38,10 @@
 
 .page-nav{
   display: flex;
-  gap: var(--space-5);
-  /* font-size: 0.9rem; */
+  align-items: center;
+  white-space: nowrap;
+  font-size: 0.9rem;
+  gap: clamp(0.2rem, 2vw, 9rem);
 }
 
 .title img {
@@ -59,10 +62,22 @@ button {
   border: none;
   background-color: var(--terracotta);
   color: var(--ink-on-color);
-  font-weight: bold;
 }
 
 button:hover{
   cursor: pointer;
   background-color: var(--clay);
+}
+
+#theme-toggler {
+  color: var(--ink-on-color);
+  background-color: var(--ink);
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }

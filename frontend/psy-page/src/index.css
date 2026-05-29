@@ -8,6 +8,7 @@
 
 /* colors */
 :root {
+  --bg-img: url('./assets/light-bg.png');
   --bg: #EFE6D2;
   --about-bg: #fcf7ee;
   --surface: #F8F1E4;
@@ -27,6 +28,7 @@
 /* dark theme colors */
 /* Dark theme */
 [data-theme="dark"] {
+  --bg-img: url('./assets/dark-bg.png');
   --bg: #15110C;
   --about-bg: #2A231B;
   --surface: #1F1912;
@@ -41,7 +43,7 @@
   --golden-brown: #A9743B;
 
   --ink: #F2E7D8;
-  --ink-on-color: #F2E7D8;
+  --ink-on-color: #15110C;
   --muted-text: #B9AB98;
 }
 

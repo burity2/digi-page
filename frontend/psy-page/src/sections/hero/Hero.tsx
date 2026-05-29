@@ -1,5 +1,4 @@
-import vaneImg from '../../assets/hero-crop.png'
-import bgMandala from '../../assets/crop-bg-mandala.png'
+import vaneImg from '../../assets/hair-fix-her-crop-hue-fix-2.png'
 import './hero.css'
 import { IconArrowNarrowRight } from '@tabler/icons-react';
 
@@ -16,7 +15,6 @@ export default function Hero() {
         </div>
       </div>
       <div id="hero-art">
-        <img id="hero-mandala" src={bgMandala} alt="" />
         <img id="hero-vane" src={vaneImg} alt="" />
       </div>
     </div>
