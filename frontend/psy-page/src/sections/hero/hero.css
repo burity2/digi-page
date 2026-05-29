@@ -1,15 +1,13 @@
 #hero-container {
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
-  gap: 12rem;
-  /* background-color: var(--bg); */
+  gap: clamp(4rem, 8vw, 12rem);
   background-image: var(--bg-img);
   padding: var(--space-2) var(--space-6) 0;
-
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;     /* fills container, may crop */
+  background-size: cover;
   color: var(--ink);
 }
 
@@ -17,7 +15,7 @@
   display: flex;
   align-self: end;
   flex-direction: column;
-  gap: var(--space-4);
+  gap: clamp(1rem, 2vw, 4rem);
   width: 38%;
   padding-bottom: var(--space-4);
 }
@@ -35,9 +33,33 @@
   width: 78%;
 }
 
+#txt-accent{
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+}
+
+#txt-accent::after{
+  content: "";
+  position: absolute;
+  left: 9.5rem;
+  right: -0.7rem;
+  height: 0.9rem;
+  bottom: -0.7rem;
+
+  background: url("../../assets/brush-strokes/3.png") no-repeat center;
+  background-size: 100% 100%;
+
+  z-index: -1;
+  opacity: 0.9;
+  pointer-events: none;
+
+  filter: var(--terracotta-filter);
+}
+
 #hero-cta-wrapper {
   display: flex;
-  gap: var(--space-6);
+  gap: clamp(1rem, 2vw, 4rem);
   align-items: center;
 }
 
@@ -61,31 +83,46 @@
 #underlined-a {
   text-decoration: underline solid 1px var(--ink);
   text-underline-offset: 0.4em;
+    transition:
+    transform 180ms ease,
 }
 
-#hero-art {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  place-items: center;
-}
-
-#hero-mandala{
-  position: absolute;
-  z-index: 0;
-  width: min(240px, 35vw);
-  height: auto;
-  pointer-events: none;
-  transform: translate(-75%, 0%);
-  filter: var(--sage-filter);
+#underlined-a:hover {
+  transform: translateY(-1px);
 }
 
 #hero-vane{
-  position: relative;
-  z-index: 1;
-  display: block;
   max-height: 30rem;
+  min-height: 15rem;
   width: auto;
+
 }
 
+#green-btn {
+    background: linear-gradient(
+    to bottom,
+    color-mix(in oklab, var(--sage) 92%, white),
+    var(--sage)
+  );
+}
+
+@media (max-width: 78rem) {
+  #hero-cta-wrapper {
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
+
+@media (max-width: 57rem){
+  #hero-container {
+    flex-direction: column;
+    gap: clamp(1rem, 2vw, 4rem);
+    padding-top: 2rem;
+  }
+
+  #hero-txt {
+    width: 100%;
+    padding-bottom: 0;
+  }
+}
 
