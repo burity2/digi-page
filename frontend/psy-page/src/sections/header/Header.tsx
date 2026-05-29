@@ -1,7 +1,6 @@
-import titleArt from '../../assets/mandala-2.png'
 import './header.css'
 
-import { IconMoon, IconSun } from '@tabler/icons-react';
+import { IconMoon, IconSun, IconCalendarEvent, IconMenu2 } from '@tabler/icons-react';
 
 type HeaderProps = {
   isDark: boolean
@@ -13,7 +12,7 @@ export default function Header({ isDark, toggleTheme }: HeaderProps) {
     <>
     <div id="header-box">
       <div className="title">
-        <img src={titleArt} alt="a mandala resembling the sun" />
+        <div className="logo-mark" aria-hidden="true" />
         <div className="title-txt">
           <h1>VANESSA DI GIORNO</h1>
           <p>PSICÓLOGA</p>
@@ -26,9 +25,13 @@ export default function Header({ isDark, toggleTheme }: HeaderProps) {
           <a href="#resources" className="cta-anchors">Recursos</a>
           <a href="#footer" className="cta-anchors">Contato</a>
         </div>
-        <button className="page-btn">Agendar Consulta</button>
+        <IconMenu2 className='hamburger-menu' stroke={1.5} />
+        <button className="page-btn">
+          <span className="btn-txt">Agendar Consulta</span>
+          <IconCalendarEvent stroke={1.5} />
+          </button>
         <button id='theme-toggler' onClick={toggleTheme} aria-label="Toggle theme">
-        { isDark ? <IconSun stroke={2} /> : <IconMoon stroke={2} />}
+        { isDark ? <IconSun stroke={1.5} /> : <IconMoon stroke={1.5} />}
         </button>
       </div>
     </div>
