@@ -131,18 +131,6 @@ a {
 
 .btn-icon{ display: block; }
 
-@media (max-width: 57rem){
-  .btn-txt{ display: none; }
-  #theme-toggler { display: none; }
-}
-
-@media (max-width: 78rem) {
-  .page-nav { display: none; }
-  .hamburger-menu {
-    display: inline-flex;
-    color: var(--ink); }
-}
-
 #theme-toggler {
   color: var(--ink);
   background-color: var(--surface);
@@ -165,5 +153,16 @@ a {
   background-color: var(--ink);
   border-color: var(--surface);
   color: var(--surface);
+}
 
+@media (max-width: 78rem) {
+  .page-nav { display: none; }
+  .hamburger-menu {
+    display: inline-flex;
+    color: var(--ink); }
+}
+
+@media (max-width: 57rem){
+  #red-btn span { display: none; }
+  #theme-toggler { display: none; }
 }

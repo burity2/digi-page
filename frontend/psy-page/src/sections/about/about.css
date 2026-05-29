@@ -1,5 +1,5 @@
 #about-box {
-  background-color: var(--about-bg);
+  background-color: var(--surface);
   display: flex;
   padding: var(--space-3) 0 var(--space-3)  var(--space-6);
 }

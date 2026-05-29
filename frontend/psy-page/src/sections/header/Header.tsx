@@ -26,9 +26,9 @@ export default function Header({ isDark, toggleTheme }: HeaderProps) {
           <a href="#footer" className="cta-anchors">Contato</a>
         </div>
         <IconMenu2 className='hamburger-menu' stroke={1.5} />
-        <button className="page-btn">
-          <span className="btn-txt">Agendar Consulta</span>
+        <button className="page-btn" id='red-btn'>
           <IconCalendarEvent stroke={1.5} />
+          <span className="btn-txt">Agendar Consulta</span>
           </button>
         <button id='theme-toggler' onClick={toggleTheme} aria-label="Toggle theme">
         { isDark ? <IconSun stroke={1.5} /> : <IconMoon stroke={1.5} />}
