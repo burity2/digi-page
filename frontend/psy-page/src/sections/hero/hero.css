@@ -13,7 +13,7 @@
 
 #hero-txt {
   display: flex;
-  align-self: end;
+  align-self: center;
   flex-direction: column;
   gap: clamp(1rem, 2vw, 4rem);
   width: 38%;
@@ -80,14 +80,14 @@
   background-color: var(--sage);
 }
 
-#underlined-a {
+.underlined-a {
   text-decoration: underline solid 1px var(--ink);
   text-underline-offset: 0.4em;
     transition:
     transform 180ms ease,
 }
 
-#underlined-a:hover {
+.underlined-a:hover {
   transform: translateY(-1px);
 }
 
@@ -101,8 +101,8 @@
 #green-btn {
     background: linear-gradient(
     to bottom,
-    color-mix(in oklab, var(--sage) 92%, white),
-    var(--sage)
+    color-mix(in oklab, var(--olive) 92%, white),
+    var(--olive)
   );
 }
 

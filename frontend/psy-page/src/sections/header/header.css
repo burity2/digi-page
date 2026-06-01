@@ -63,7 +63,7 @@ a {
   text-decoration: none;
   color: var(--ink);
   position: relative;
-  /* display: inline-block; */
+  scroll-behavior: smooth;
 }
 
 .cta-anchors::before {
