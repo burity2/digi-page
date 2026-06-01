@@ -14,7 +14,7 @@ export default function Hero() {
             <IconCalendarEvent stroke={1.5} />
             <span className="btn-txt">Agendar Consulta</span>
             </button>
-          <a id='underlined-a' href="#about">Saiba mais <span><IconArrowNarrowRight stroke={1.5} /></span></a>
+          <a className='underlined-a' href="#about">Saiba mais <span><IconArrowNarrowRight stroke={1.5} /></span></a>
         </div>
       </div>
       <div id="hero-art">

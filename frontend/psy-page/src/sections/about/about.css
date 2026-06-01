@@ -2,14 +2,16 @@
   background-color: var(--surface);
   display: flex;
   padding: var(--space-3) 0 var(--space-3)  var(--space-6);
+  color: var(--ink);
 }
 
 #about-txt {
   display: flex;
+  padding: 2rem clamp(1rem, 4vw, 6rem);
   flex-direction: column;
   justify-content: center;
-  padding: 0 5rem 0 10rem;
   gap: var(--space-3);
+  width: 50%;
 }
 
 #about-txt h2 {
@@ -29,6 +31,7 @@
 }
 
 #about-txt button {
+  border: none;
   display: flex;
   width: fit-content;
   align-items: center;
@@ -41,14 +44,49 @@
   padding: 0;
 }
 
+#hug-img-box {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  height: clamp(360px, 480px, 520px)
+}
+
 #hug-img {
-  max-height: 325px;
-  min-width: 50%;
-  display: block;
-  align-self: center;
+  height: 100%;
+  width: 100%;
+  max-width: 1050px;
+  object-fit: cover;
 }
 
 h4 {
   font-weight: 500;
   color: var(--terracotta);
 }
+
+@media (max-width: 57rem){
+  #about-box {
+    flex-direction: column;
+    padding: var(--space-3) var(--space-2);
+    align-items: center;
+    text-align: center;
+  }
+
+  #about-txt {
+    align-items: center;
+    width: 85%;
+  }
+
+  #hug-img-box {
+    width: 100%;
+    height: 380px;
+    min-height: 240px;
+  }
+}
+
+#more-info {
+  background-color: var(--surface);
+  display: flex;
+  padding: var(--space-3) var(--space-6);
+  color: var(--ink);
+}
+
