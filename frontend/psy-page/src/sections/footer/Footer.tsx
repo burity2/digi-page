@@ -39,10 +39,12 @@ export default function Footer() {
         <h3>Me siga</h3>
         <div id='link-btn-wrapper'>
           <button className='link-btn'><IconBrandInstagram className='follow-icon' stroke={1.5} /></button>
-          <button className='link-btn'><IconBrandLinkedin className='follow-icon' stroke={1.5} /></button>
+          <button className='link-btn'><IconBrandLinkedin className='follow-icon' id='ig-icon' stroke={1.5} /></button>
         </div>
       </div>
+
     </div>
+    <p className='rights-p'>© 2025 Vanessa Di Giorno. All rights reserved.</p>
     </>
   )
 }

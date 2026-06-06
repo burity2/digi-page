@@ -13,7 +13,7 @@ export default function Hero() {
           <button className="page-btn" id='green-btn'>
             <IconCalendarEvent stroke={1.5} />
             <span className="btn-txt">Agendar Consulta</span>
-            </button>
+          </button>
           <a className='underlined-a' href="#about">Saiba mais <span><IconArrowNarrowRight stroke={1.5} /></span></a>
         </div>
       </div>

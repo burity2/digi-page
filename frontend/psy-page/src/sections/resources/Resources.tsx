@@ -27,7 +27,7 @@ export default function Resources() {
       <div className="resources-txt">
         <h4>RESOURCES</h4>
         <h2>Tools and reads to support your wellbeing</h2>
-        <button>Ver todos os recursos<span><IconArrowNarrowRight stroke={1.5} /></span></button>
+        <button >Ver todos os recursos<span><IconArrowNarrowRight stroke={1.5} /></span></button>
       </div>
       <div className="resources-cards">
           {resourceArray.map((res) => {
@@ -40,7 +40,7 @@ export default function Resources() {
                 <h2>{res.resource_name}</h2>
                 <div className='res-cta-wrapper'>
                   <p>{res.resource_cta}</p>
-                  <ResIcon className='res-icon' stroke={1} />
+                  <button><ResIcon className='res-icon' stroke={1} /></button>
                 </div>
               </div>
             </div>
