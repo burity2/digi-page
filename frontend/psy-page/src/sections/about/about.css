@@ -16,16 +16,16 @@
 
 #about-txt h2 {
   font-family: var(--font-heading);
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 600;
-  line-height: 2.5rem;
+  line-height: 3.5rem;
 }
 
 #about-txt p {
   line-height: 2rem;
 }
 
-#colored-italic {
+.colored-italic {
   color: var(--terracotta);
   font-style: italic;
 }
@@ -63,7 +63,98 @@ h4 {
   color: var(--terracotta);
 }
 
-@media (max-width: 57rem){
+#more-info-a{
+  display: flex;
+  gap: 0.8rem;
+}
+
+#more-info-box {
+  background-color: var(--surface);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-3) var(--space-6);
+  color: var(--ink);
+  gap: 3rem;
+}
+
+#more-info-txt {
+  display: flex;
+  gap: 4rem;
+}
+
+#bio-img {
+  width: 25rem;
+  min-width: 20rem;
+  height: clamp(160px, 420px, 620px);
+}
+
+#more-info-pic {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#bio-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  line-height: 2rem;
+}
+
+#bio-txt h2{
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+}
+
+.quote-txt {
+  display: flex;
+  gap: 1.2rem;
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+.more-info-quote {
+  padding-left: 1rem;
+  border-left: solid 1px var(--olive);
+}
+
+#quote-icon {
+  display: block;
+  min-width: 3rem;
+  min-height: 3rem;
+  color: var(--terracotta);
+}
+
+#more-info-footer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  width: 100%;
+  gap: 2rem;
+  place-items: center;
+}
+
+.more-info-footer-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-icon{
+  min-width: 3rem;
+  min-height: 3rem;
+  color: var(--terracotta);
+}
+
+.footer-card-wrapper h3 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+}
+
+@media (max-width: 67rem){
   #about-box {
     flex-direction: column;
     padding: var(--space-3) var(--space-2);
@@ -81,12 +172,22 @@ h4 {
     height: 380px;
     min-height: 240px;
   }
-}
 
-#more-info {
-  background-color: var(--surface);
-  display: flex;
-  padding: var(--space-3) var(--space-6);
-  color: var(--ink);
-}
+  #bio-img {
+    display: none;
+  }
 
+  #more-info-box {
+  padding: var(--space-2) var(--space-2);
+  }
+
+  #more-info-footer{
+    gap: 2rem;
+  }
+
+  .footer-icon{
+  width: 0.1rem;
+  height: 0.1rem;
+  }
+
+}

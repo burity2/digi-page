@@ -9,6 +9,7 @@
   background-position: center;
   background-size: cover;
   color: var(--ink);
+  position: relative;
 }
 
 #hero-txt {
@@ -117,12 +118,12 @@
   #hero-container {
     flex-direction: column;
     gap: clamp(1rem, 2vw, 4rem);
-    padding-top: 2rem;
+    padding: var(--space-6) var(--space-6) 0 var(--space-6);
   }
 
   #hero-txt {
     width: 100%;
     padding-bottom: 0;
   }
-}
 
+}

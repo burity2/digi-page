@@ -3,12 +3,14 @@
   padding: var(--space-5) var(--space-6);
   background-image: url('../../assets/olive-grain-bg.png');
   color: var(--surface);
+  align-items: center;
 }
 
 .resources-txt {
   display: flex;
   flex-direction: column;
   gap: var(--space-4);
+  width: 25%;
 }
 
 .resources-txt h2 {
@@ -28,20 +30,25 @@
   font-weight: 400;
   text-decoration: underline solid 1px;
   background: none;
+  border: none;
   text-underline-offset: 0.4em;
   gap: var(--space-2);
   padding: 0;
+  color: var(--surface);
 }
 
 .resources-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-4);
+  width: 75%;
+  justify-items: center;
 }
 
 .res-card{
   border-radius: 1rem;
   overflow: hidden;
+  max-width: 270px;
 }
 
 .res-img {
@@ -63,6 +70,7 @@
   flex-direction: column;
   gap: var(--space-1);
   padding: var(--space-2);
+  height: 100%;
 }
 
 .res-txt h4 {
@@ -92,4 +100,36 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.res-cta-wrapper button {
+  border-radius: 50%;
+  min-width: 3rem;
+  min-height: 3rem;
+  border: var(--terracotta) solid 1px;
+  background-color: var(--surface);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.res-cta-wrapper button:hover{
+  background-color: var(--bg);
+}
+
+@media (max-width: 75rem){
+  .resources-box {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .resources-txt {
+    width: 100%;
+  }
+
+  .resources-cards {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }

@@ -6,12 +6,20 @@ import Icon from './sections/icons/Icons'
 import Resources from './sections/resources/Resources'
 import Footer from './sections/footer/Footer'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 function App() {
 
-  const [isDark, setIsDark] = useState(false)
+  const [isDark, setIsDark] = useState(() => {
+    const savedTheme = localStorage.getItem('theme')
+    return savedTheme === 'dark'
+  })
+
   const [isMoreInfoDisplayed, setIsMoreInfoDisplayed] = useState(false)
+
+  useEffect(() => {
+    localStorage.setItem('theme', isDark ? 'dark' : 'light')
+  }, [isDark])
 
   return (
     < div className='container' data-theme={isDark ? "dark" : "light"}>
