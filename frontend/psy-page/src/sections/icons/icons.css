@@ -1,31 +1,28 @@
 #icon-box{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: var(--space-5);
+  gap: var(--space-6);
   background-color: var(--bg);
-  padding: var(--space-3) var(--space-6) var(--space-5);
+  width: 100%;
+  padding: 3rem 0;
+  align-items: center;
 }
 
 #approach-card-box {
-  display: flex;
-  justify-content: space-between;
-  width: 85%;
-}
+  padding: var(--space-3);
+  display: grid;
+  gap: clamp(2rem, 2vw, 4rem);
+  grid-template-columns: repeat(4, 1fr);
 
-.approach-card + .approach-card {
-  border-left: 1px solid var(--olive);
 }
 
 .approach-card {
   display: flex;
-  flex: 1;
   padding: 0 var(--space-4);
   flex-direction: column;
   align-items: center;
   text-align: center;
   color: var(--ink);
-  width: 18%;
   gap: var(--space-2);
 }
 
@@ -35,3 +32,36 @@
   color: var(--olive);
 }
 
+@media (max-width: 75rem){
+  #approach-card-box {
+  width: 90%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media (min-width: 56.25rem){
+  .approach-card{
+    border-left: 1px solid color-mix(in oklab, var(--ink) 16%, transparent);
+  }
+  .approach-card:nth-child(1){ border-left: none; }
+}
+
+@media (min-width: 40rem) and (max-width: 75rem){ /* ~640–899px */
+
+  .approach-card{
+    border: none;
+    padding: var(--space-4);
+    }
+}
+
+@media (max-width: 51.2rem){ /* < 640px */
+
+  .approach-card + .approach-card{
+    border-top: 1px solid color-mix(in oklab, var(--ink) 16%, transparent);
+    padding: var(--space-6) var(--space-6) 0 var(--space-6);
+  }
+
+    #approach-card-box {
+  grid-template-columns: 1fr;
+  }
+}

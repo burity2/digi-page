@@ -1,27 +1,20 @@
 #footer-box{
-  background-color: var(--about-bg);
-  display: flex;
+  background-color: var(--bg);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   align-items: center;
-  padding: var(--space-3) var(--space-8);
+  padding: var(--space-4) var(--space-8);
+  color: var(--ink);
+  gap: 3rem;
+  border: none;
 }
 
 .footer-card {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   padding: 0 var(--space-3);
   position: relative;
-}
-
-.footer-card + .footer-card::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 10%;
-  height: 80%;                 /* shorter, like the reference */
-  width: 1px;
-  background: var(--sage)
 }
 
 #footer-txt {
@@ -34,6 +27,7 @@
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 1.7rem;
+  padding: 0;
 }
 
 #footer-contact {
@@ -44,28 +38,26 @@
   display: flex;
   align-items: flex-start;
   gap: var(--space-2);
+  line-height: 2rem;
 }
 
 .contact-icon {
   background-color: var(--terracotta);
   border-radius: 50%;
   color: var(--ink-on-color);
-  height: 1.5rem;
-  width: 1.5rem;
+  min-height: 1.5rem;
+  min-width: 1.5rem;
   padding: 0.1rem;
 }
 
 #footer-links {
   align-items: flex-start;
-  gap: var(--space-1);
-  padding: 0 0 0 3rem;
   }
 
 #footer-links h3 {
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 1.7rem;
-  padding: 0 0 0 var(--space-1);
 }
 
 .link-btn{
@@ -78,9 +70,15 @@
   background: none;
 }
 
+#ig-icon {
+  width: 2.7rem;
+  height: 2.7rem;
+}
+
 .follow-icon:hover, .link-btn:hover{
   color: var(--muted-text);
-  background-color: var(--about-bg)
+  /* background-color: var(--about-bg); */
+  border-radius: 1rem;
 }
 
 .follow-icon{
@@ -88,4 +86,24 @@
   height: 100%;
   display: block;
   color: var(--terracotta);
+}
+
+.rights-p {
+  width: 100%;
+  text-align: center;
+  color: var(--ink);
+  background-color: var(--bg);
+  padding: 1rem;
+  border: none;
+}
+
+@media (max-width: 51.2rem){
+  #footer-box{
+  padding: var(--space-3) var(--space-3);
+  }
+
+  .footer-card {
+    padding: 0;
+  }
+
 }
