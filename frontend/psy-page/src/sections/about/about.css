@@ -131,16 +131,17 @@ h4 {
 
 #more-info-footer{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   width: 100%;
   gap: 2rem;
-  place-items: center;
+  /* place-items: center; */
 }
 
 .more-info-footer-card {
   display: flex;
   align-items: center;
   gap: 1rem;
+  min-width: 19rem;
 }
 
 .footer-icon{

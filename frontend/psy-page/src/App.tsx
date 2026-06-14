@@ -16,6 +16,7 @@ function App() {
   })
 
   const [isMoreInfoDisplayed, setIsMoreInfoDisplayed] = useState(false)
+  const [isApproachDisplayed, setIsApproachDisplayed] = useState(false)
 
   useEffect(() => {
     localStorage.setItem('theme', isDark ? 'dark' : 'light')
@@ -24,9 +25,9 @@ function App() {
   return (
     < div className='container' data-theme={isDark ? "dark" : "light"}>
       <Header isDark={isDark} toggleTheme={() => setIsDark(v => !v)}/>
-      <Hero/>
+      <Hero isDark={isDark}/>
       <section id="about" ><About isMoreInfoDisplayed={isMoreInfoDisplayed} displayMoreInfo={() => setIsMoreInfoDisplayed(v => !v)} /></section>
-      <section id="icons"><Icon/></section>
+      <section id="icons"><Icon isApproachDisplayed={isApproachDisplayed} displayApproach={() => setIsApproachDisplayed(v => !v)}/></section>
       <section id="resources"><Resources/></section>
       <section id="footer"><Footer/></section>
     </div>

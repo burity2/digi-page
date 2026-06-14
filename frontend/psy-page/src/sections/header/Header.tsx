@@ -1,5 +1,5 @@
 import './header.css'
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 import { IconMoon, IconSun, IconX, IconCalendarEvent, IconMenu2 } from '@tabler/icons-react';
 
@@ -11,10 +11,30 @@ type HeaderProps = {
 
 export default function Header({ isDark, toggleTheme }: HeaderProps) {
 
-  const [isActive, setActive] = useState(false);
+  const [isActive, setIsActive] = useState(false);
   const toggleClass = () => {
-    setActive(!isActive);
+    setIsActive(!isActive);
   }
+
+  const menuRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (!isActive) return;
+
+    function handleClickOutside(event: MouseEvent) {
+      if (!menuRef.current) return;
+
+      if (!menuRef.current.contains(event.target as Node)) {
+        setIsActive(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isActive]);
 
   return (
     <>
@@ -33,7 +53,7 @@ export default function Header({ isDark, toggleTheme }: HeaderProps) {
           <a href="#resources" className="cta-anchors">Recursos</a>
           <a href="#footer" className="cta-anchors">Contato</a>
         </div>
-        <div className='hamburguer-wrap'>
+        <div className='hamburguer-wrap' ref={menuRef}>
           <button
             className='hamburger-menu'
             onClick={toggleClass}
@@ -59,10 +79,10 @@ export default function Header({ isDark, toggleTheme }: HeaderProps) {
           </div>
         </div>
 
-        <button className="page-btn" id='red-btn'>
+        <a className="page-btn" id='red-btn' href='https://calendly.com/psivanessadigiorno/30min' target='_blank' rel="noopener noreferrer">
           <IconCalendarEvent className='btn-icon' stroke={1.5} />
           <span className="btn-txt">Agendar Consulta</span>
-          </button>
+          </a>
         <button id='theme-toggler' onClick={toggleTheme} aria-label="Toggle theme">
         { isDark ? <IconSun stroke={1.5} /> : <IconMoon stroke={1.5} />}
         </button>
