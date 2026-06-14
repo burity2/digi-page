@@ -25,7 +25,7 @@ function App() {
   return (
     < div className='container' data-theme={isDark ? "dark" : "light"}>
       <Header isDark={isDark} toggleTheme={() => setIsDark(v => !v)}/>
-      <Hero isDark={isDark}/>
+      <Hero/>
       <section id="about" ><About isMoreInfoDisplayed={isMoreInfoDisplayed} displayMoreInfo={() => setIsMoreInfoDisplayed(v => !v)} /></section>
       <section id="icons"><Icon isApproachDisplayed={isApproachDisplayed} displayApproach={() => setIsApproachDisplayed(v => !v)}/></section>
       <section id="resources"><Resources/></section>
