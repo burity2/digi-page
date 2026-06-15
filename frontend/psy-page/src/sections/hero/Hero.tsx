@@ -19,7 +19,7 @@ export default function Hero() {
         </div>
       </div>
       <div id="hero-art">
-        <img id="hero-vane" src={vaneImg} alt="" />
+        <img id="hero-vane" src={vaneImg} alt="profile picture of Vanessa" />
       </div>
     </div>
     </>
