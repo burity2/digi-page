@@ -122,6 +122,12 @@ h4 {
   border-left: solid 1px var(--olive);
 }
 
+.more-info-quote p{
+  color: var(--muted-text);
+  font-size: 1.6rem;
+  font-style: normal;
+}
+
 #quote-icon {
   display: block;
   min-width: 3rem;
