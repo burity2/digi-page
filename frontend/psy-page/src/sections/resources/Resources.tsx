@@ -1,48 +1,48 @@
 import './resources.css'
-import type { TablerIcon } from '@tabler/icons-react'
-import { IconArrowNarrowRight, IconDownload } from '@tabler/icons-react';
 
 import watercolorImg from '../../assets/pictures/watercolor.jpeg'
 import partyImg from '../../assets/pictures/party.jpeg'
-import workshopImg from '../../assets/pictures/workshop.jpeg'
+import MeetImg from '../../assets/pictures/meet.jpg'
+import personImg from '../../assets/pictures/person.jpg'
+import profileImg from '../../assets/pictures/profile-art.jpg'
+import readingImg from  '../../assets/pictures/reading.jpg'
+import watercolorTwoImg from '../../assets/pictures/watercolor-2.jpg'
+import carrotImg from '../../assets/pictures/carrot.jpg'
+import readingTwoImg from '../../assets/pictures/reading-2.jpg'
+import vaneTwoImg from '../../assets/pictures/vane-hold-art.jpg'
+import meetTwoImg from '../../assets/pictures/ws2.jpg'
+import workshopImg from '../../assets/pictures/workshop.jpg'
 
 type ResourceCard = {
   img: string,
-  resource_type: string,
-  resource_name:  string,
-  resource_cta: string,
-  cta_icon: TablerIcon
+  alt:  string,
+  id: number
 }
 
 const resourceArray: ResourceCard[] = [
-{img: watercolorImg, resource_type: 'WORKSHEET', resource_name: 'How painting will cure your anxiety', resource_cta: '5 min read', cta_icon:IconDownload },
-{img: partyImg, resource_type: 'PDF', resource_name: 'therapists  autumn meet & greet', resource_cta: 'photoshoot', cta_icon:IconDownload },
-{img: workshopImg, resource_type: 'TEXT', resource_name: 'How it\'s like to be with Vanessa', resource_cta: '10 min read', cta_icon:IconDownload },
+{img: watercolorImg, alt: 'watercolor portrait', id: 1},
+{img: partyImg, alt: 'people partying on a sunny place', id: 2},
+{img: MeetImg, alt: 'friends laughing', id: 3 },
+{img: profileImg, alt: 'Vanessa and her watercolors', id: 4 },
+{img: readingTwoImg, alt: 'Vanessa reading', id: 5 },
+{img: vaneTwoImg, alt: 'Vanessa showing her painting', id: 6 },
+{img: carrotImg, alt: 'Girl showing her painting', id: 7 },
+{img: personImg, alt: 'Woman showing her painting', id: 8 },
+{img: readingImg, alt: 'Vanessa and her book', id: 9 },
+{img: watercolorTwoImg, alt: 'watercolor of a greek vase and oranges', id: 10 },
+{img: workshopImg, alt: 'people painting in groups', id: 11 },
+{img: meetTwoImg, alt: 'friends laughing', id: 12 },
 ]
 
 export default function Resources() {
   return (
     <>
     <div className="resources-box">
-      <div className="resources-txt">
-        <h4>RESOURCES</h4>
-        <h2>Tools and reads to support your wellbeing</h2>
-        <button >Ver todos os recursos<span><IconArrowNarrowRight stroke={1.5} /></span></button>
-      </div>
       <div className="resources-cards">
-          {resourceArray.map((res) => {
-          const ResIcon = res.cta_icon
+          {[...resourceArray, ...resourceArray].map((res) => {
           return (
-            <div className="res-card" key={res.resource_name}>
-              <img className='res-img' src={res.img} alt="resource cover" />
-              <div className='res-txt'>
-                <h4>{res.resource_type}</h4>
-                <h2>{res.resource_name}</h2>
-                <div className='res-cta-wrapper'>
-                  <p>{res.resource_cta}</p>
-                  <button><ResIcon className='res-icon' stroke={1} /></button>
-                </div>
-              </div>
+            <div className="res-card" key={res.id}>
+              <img className='res-img' src={res.img} alt={res.alt} />
             </div>
           )
         })}

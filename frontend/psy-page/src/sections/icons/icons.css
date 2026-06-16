@@ -13,7 +13,6 @@
   display: grid;
   gap: clamp(2rem, 2vw, 4rem);
   grid-template-columns: repeat(4, 1fr);
-
 }
 
 .approach-card {
@@ -30,6 +29,18 @@
   height: 4rem;
   width: 4rem;
   color: var(--olive);
+}
+
+#approach-info {
+  color: var(--ink);
+  padding: 2rem;
+  line-height: 2rem;
+  background-color: var(--surface);
+  font-size: 1.1rem;
+}
+
+.approach-highlight {
+  font-weight: bold;
 }
 
 @media (max-width: 75rem){

@@ -3,22 +3,23 @@ import './hero.css'
 import { IconArrowNarrowRight, IconCalendarEvent } from '@tabler/icons-react';
 
 export default function Hero() {
+
   return (
     <>
     <div id="hero-container">
       <div id="hero-txt">
-        <h1>Care that helps you feel seen, understood, and <span id='txt-accent'>supported.</span></h1>
-        <p>Compassionate psychiatric care for adults facing anxiety, burnout, mood challenges and life transitions.</p>
+        <h1>Atendimento para quem deseja ser escutado com atenção, respeito e <span id='txt-accent'>afeto</span></h1>
+        <p>Um espaço seguro para atravessar momentos difíceis, compreender seus sentimentos e construir novos sentidos para sua experiência.</p>
         <div id='hero-cta-wrapper'>
-          <button className="page-btn" id='green-btn'>
+          <a className="page-btn" id='green-btn' href='https://calendly.com/psivanessadigiorno/30min' target='_blank' rel="noopener noreferrer">
             <IconCalendarEvent stroke={1.5} />
             <span className="btn-txt">Agendar Consulta</span>
-          </button>
+          </a>
           <a className='underlined-a' href="#about">Saiba mais <span><IconArrowNarrowRight stroke={1.5} /></span></a>
         </div>
       </div>
       <div id="hero-art">
-        <img id="hero-vane" src={vaneImg} alt="" />
+        <img id="hero-vane" src={vaneImg} alt="profile picture of Vanessa" />
       </div>
     </div>
     </>

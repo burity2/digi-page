@@ -15,9 +15,11 @@ type MoreInfoFooterCard = {
 }
 
 const footerArray: MoreInfoFooterCard[] = [
-  {icon: IconLeaf, title: '5+', description:'years of experience'},
-  {icon: IconMessages, title: '500+', description:'sessions conducted'},
-  {icon: IconUsers, title: 'Adults & Children', description:'in-person and online'}
+  {icon: IconLeaf, title: '5+', description:'anos de experiência'},
+  {icon: IconMessages, title: '500+', description:'sessões conduzidas'},
+  {icon: IconUsers, title: 'Adultos & Crianças', description:'presencial e online'},
+  // {icon: IconBrush, title: 'Palestras & Arteterapia', description:'em escolas e clínicas'},
+  // {icon: IconUsersGroup, title: 'Pessoas Indígenas', description:'atendimento psicológico'},
 ]
 
 
@@ -28,9 +30,9 @@ export default function About({ isMoreInfoDisplayed, displayMoreInfo }: AboutPro
       <div id="about-box">
         <div id="about-txt">
           <h4>SOBRE MIM</h4>
-          <h2>I’m Vanessa Di Giornu, a psychiatrist dedicated to <span className='colored-italic'>meaningful change.</span></h2>
-          <p>I create a safe, collaborative space where you can feel truly heard. My approach integrates clinical expertise with empathy to help you understand yourself and move forward with confidence.</p>
-          <a href="#more-info" className='underlined-a' id='more-info-a'
+          <h2>Oi, eu sou a Vanessa, uma psicóloga dedicada à <span className='colored-italic'>escuta e ao afeto.</span></h2>
+          <p>Artista, psicóloga e pesquisadora das áreas de filosofia e gênero. Minha clínica se pauta na escuta da palavra e do corpo, no acolhimento e da busca por sentido. Se você procura uma terapia acolhedora e mais profunda, seu lugar é aqui!</p>
+          <a href="#more-info-box" className='underlined-a' id='more-info-a'
                   onClick={displayMoreInfo}
                   aria-expanded={isMoreInfoDisplayed}
                   aria-controls="more-info"
@@ -50,10 +52,10 @@ export default function About({ isMoreInfoDisplayed, displayMoreInfo }: AboutPro
                 <img id='more-info-pic' src={moreInfoImg} alt="" />
               </div>
               <div id='bio-txt'>
-                <h2>This is a important phrase about<span className='colored-italic'> myself.</span></h2>
-                <p className='more-info-p'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati ullam consequuntur! A corporis quaerat debitis vitae. Doloribus ipsam deleniti saepe neque error labore quisquam? Nostrum laborum et illum doloremque?</p>
-                <p className='more-info-p'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque praesentium vero doloribus eveniet ex rerum, magni ab amet optio pariatur velit veritatis, ut ipsam, qui autem maiores cum nesciunt. Facilis.</p>
-                <p className='more-info-p'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae sint architecto voluptas hic illum veniam sequi explicabo officiis ex autem eius odio in, perspiciatis quas impedit rem non natus illo.</p>
+                <h2>Minha clínica nasce do encontro entre a escuta, a sensibilidade e a<span className='colored-italic'> busca por sentido.</span></h2>
+                <p className='more-info-p'>Graduada em Psicologia Filosofia Licenciatura pela Universidade de Brasília, especialista em Psicologia Analítica pelo Instituto de Ensino e Pesquisa Junguiano ( IJEP), é mestranda na área de Filosofia e Gênero pela Universidade de Brasília (UnB) e pela Universidade Federal do Rio de Janeiro (UFRJ), onde desenvolve pesquisas sobre subjetividade, filosofia e feminismo.</p>
+                <p className='more-info-p'>Pintora com obras em diversos países, Vanessa compreende a arte como uma forma de expressão potente e criativa. Sua clínica tem como foco a escuta de mulheres e a população LGBTQIA+, tendo também desenvolvido importante trabalho como psicóloga e militante na área de saúde mental indígena. </p>
+                <p className='more-info-p'>Sua prática integra sensibilidade, acolhimento e simbolização para uma compreensão mais profunda do ser e do sentir.</p>
                 <div className="quote-txt">
                   <IconQuoteOpen id='quote-icon' stroke={1.5} />
                   <p className='more-info-quote'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, labore quia minima nostrum consequatur minus aspernatur quo nulla cum.</p>
@@ -75,10 +77,10 @@ export default function About({ isMoreInfoDisplayed, displayMoreInfo }: AboutPro
                 )
               })}
 
-              <button className="page-btn">
+              <a className="page-btn" href='https://calendly.com/psivanessadigiorno/30min' target='_blank' rel="noopener noreferrer">
                 <IconCalendarEvent stroke={1.5} />
                 <span className="btn-txt">Agendar Consulta</span>
-              </button>
+              </a>
             </div>
           </div>
           )}
