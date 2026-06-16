@@ -11,7 +11,7 @@ type ContactCard = {
 }
 
 const ContactArray: ContactCard[] = [
-  {icon: IconMapPin, info: 'Brasília, DF — Brasil', id: 'location' },
+  {icon: IconMapPin, info: 'Online e Brasília, DF', id: 'location' },
   {icon: IconMail, info: 'psivanessadigiorno@gmail.com', link:'mailto:psivanessadigiorno@gmail.com', id: 'email'},
   {icon: IconPhone, info: '+55 (61) 8241-8519', link:'https://api.whatsapp.com/send/?phone=556182418519&text&type=phone_number&app_absent=0&utm_source=ig', id: 'phone'},
   ]

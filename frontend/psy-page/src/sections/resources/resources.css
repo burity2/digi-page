@@ -12,7 +12,7 @@
   display: flex;
   width: max-content;
   gap: 1rem;
-  animation: resources-scroll 80s linear infinite;
+  animation: resources-scroll 220s linear infinite;
 }
 
 .res-card{

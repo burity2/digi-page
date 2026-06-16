@@ -1,5 +1,5 @@
 import './about.css'
-import vanePageImg from '../../assets/pictures/party.jpeg'
+import vanePageImg from '../../assets/pictures/hug.jpeg'
 import moreInfoImg from '../../assets/pictures/vane-more-info.jpeg'
 import { IconArrowNarrowDown, IconCalendarEvent, IconUsers, IconMessages, IconLeaf, IconArrowNarrowRight,IconQuoteOpen, type TablerIcon } from '@tabler/icons-react';
 
@@ -15,9 +15,9 @@ type MoreInfoFooterCard = {
 }
 
 const footerArray: MoreInfoFooterCard[] = [
-  {icon: IconLeaf, title: '5+', description:'anos de experiência'},
+  {icon: IconLeaf, title: 'Prática diversa', description:'sessões, palestras & arteterapia'},
   {icon: IconMessages, title: '500+', description:'sessões conduzidas'},
-  {icon: IconUsers, title: 'Adultos & Crianças', description:'presencial e online'},
+  {icon: IconUsers, title: 'Atendimento online', description:'Adultos & Crianças'},
   // {icon: IconBrush, title: 'Palestras & Arteterapia', description:'em escolas e clínicas'},
   // {icon: IconUsersGroup, title: 'Pessoas Indígenas', description:'atendimento psicológico'},
 ]
@@ -58,7 +58,7 @@ export default function About({ isMoreInfoDisplayed, displayMoreInfo }: AboutPro
                 <p className='more-info-p'>Sua prática integra sensibilidade, acolhimento e simbolização para uma compreensão mais profunda do ser e do sentir.</p>
                 <div className="quote-txt">
                   <IconQuoteOpen id='quote-icon' stroke={1.5} />
-                  <p className='more-info-quote'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, labore quia minima nostrum consequatur minus aspernatur quo nulla cum.</p>
+                  <p className='more-info-quote'>Só aquilo que somos realmente tem o poder de curar-nos <p>C. G. Jung</p></p>
                 </div>
               </div>
             </div>
