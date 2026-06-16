@@ -53,7 +53,7 @@ export default function About({ isMoreInfoDisplayed, displayMoreInfo }: AboutPro
               </div>
               <div id='bio-txt'>
                 <h2>Minha clínica nasce do encontro entre a escuta, a sensibilidade e a<span className='colored-italic'> busca por sentido.</span></h2>
-                <p className='more-info-p'>Graduada em Psicologia Filosofia Licenciatura pela Universidade de Brasília, especialista em Psicologia Analítica pelo Instituto de Ensino e Pesquisa Junguiano ( IJEP), é mestranda na área de Filosofia e Gênero pela Universidade de Brasília (UnB) e pela Universidade Federal do Rio de Janeiro (UFRJ), onde desenvolve pesquisas sobre subjetividade, filosofia e feminismo.</p>
+                <p className='more-info-p'>Graduada em Psicologia Filosofia Licenciatura pela Universidade de Brasília, especialista em Psicologia Analítica pelo Instituto Junguiano de Ensino e Pesquisa ( IJEP), é mestranda na área de Filosofia e Gênero pela Universidade de Brasília (UnB) e pela Universidade Federal do Rio de Janeiro (UFRJ), onde desenvolve pesquisas sobre subjetividade, filosofia e feminismo.</p>
                 <p className='more-info-p'>Pintora com obras em diversos países, Vanessa compreende a arte como uma forma de expressão potente e criativa. Sua clínica tem como foco a escuta de mulheres e a população LGBTQIA+, tendo também desenvolvido importante trabalho como psicóloga e militante na área de saúde mental indígena. </p>
                 <p className='more-info-p'>Sua prática integra sensibilidade, acolhimento e simbolização para uma compreensão mais profunda do ser e do sentir.</p>
                 <div className="quote-txt">

@@ -60,6 +60,7 @@
 }
 
 .link-btn{
+  display: flex;
   width: 3rem;
   height: 3rem;
   align-items: center;
@@ -71,6 +72,7 @@
 
 #link-btn-wrapper{
   display: flex;
+  align-items: center;
 }
 
 #ig-icon {

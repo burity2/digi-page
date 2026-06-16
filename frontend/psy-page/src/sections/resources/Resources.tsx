@@ -41,8 +41,8 @@ export default function Resources() {
       <div className="resources-cards">
           {[...resourceArray, ...resourceArray].map((res) => {
           return (
-            <div className="res-card" key={res.id}>
-              <img className='res-img' src={res.img} alt={res.alt} />
+            <div className="res-card" key={res.alt}>
+              <img className='res-img' src={res.img} alt={res.alt} loading='lazy' decoding='async'/>
             </div>
           )
         })}
