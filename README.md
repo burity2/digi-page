@@ -1,6 +1,6 @@
 # Vanessa Di Giorno — Therapist Landing Page
 
-A responsive landing page built for a therapist, focused on creating a calm, trustworthy, and welcoming online presence.
+A responsive landing page built for a therapist.
 
 The goal of this project was to design and develop a simple but polished website where visitors can learn more about Vanessa’s work, explore her approach, and easily get in touch to schedule a consultation.
 
