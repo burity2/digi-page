@@ -77,7 +77,7 @@ export default function About({ isMoreInfoDisplayed, displayMoreInfo }: AboutPro
                 )
               })}
 
-              <a className="page-btn" id='about-calendar-btn' href='https://calendly.com/psivanessadigiorno/30min' target='_blank' rel="noopener noreferrer">
+              <a className="page-btn" href='https://calendly.com/psivanessadigiorno/30min' target='_blank' rel="noopener noreferrer">
                 <IconCalendarEvent stroke={1.5} />
                 <span className="btn-txt" >Agendar Consulta</span>
               </a>

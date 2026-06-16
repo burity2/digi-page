@@ -143,7 +143,6 @@ h4 {
   width: 100%;
   column-gap: 2.5rem;
   row-gap: 2rem;
-  /* place-items: center; */
 }
 
 .more-info-footer-card {
@@ -164,8 +163,6 @@ h4 {
   font-size: 1.8rem;
 }
 
-#about-calendar-btn {
-}
 
 @media (max-width: 67rem){
   #about-box {
