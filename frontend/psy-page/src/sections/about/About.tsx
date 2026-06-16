@@ -15,9 +15,9 @@ type MoreInfoFooterCard = {
 }
 
 const footerArray: MoreInfoFooterCard[] = [
-  {icon: IconLeaf, title: 'Prática diversa', description:'sessões, palestras & arteterapia'},
+  {icon: IconLeaf, title: 'Prática diversa', description:'palestras e arteterapia'},
   {icon: IconMessages, title: '500+', description:'sessões conduzidas'},
-  {icon: IconUsers, title: 'Atendimento online', description:'Adultos & Crianças'},
+  {icon: IconUsers, title: 'Atendimento online', description:'adultos e crianças'},
   // {icon: IconBrush, title: 'Palestras & Arteterapia', description:'em escolas e clínicas'},
   // {icon: IconUsersGroup, title: 'Pessoas Indígenas', description:'atendimento psicológico'},
 ]
@@ -79,7 +79,7 @@ export default function About({ isMoreInfoDisplayed, displayMoreInfo }: AboutPro
 
               <a className="page-btn" href='https://calendly.com/psivanessadigiorno/30min' target='_blank' rel="noopener noreferrer">
                 <IconCalendarEvent stroke={1.5} />
-                <span className="btn-txt">Agendar Consulta</span>
+                <span className="btn-txt" >Agendar Consulta</span>
               </a>
             </div>
           </div>
